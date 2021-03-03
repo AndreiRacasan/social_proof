@@ -4,6 +4,7 @@
   --magenta: hsl(300, 43%, 22%);
   --pink: hsl(333, 80%, 67%);
   --dark: hsl(303, 10%, 53%);
+  --light: hsl(300, 24%, 96%);
 }
 
 * {
@@ -38,7 +39,7 @@ body {
 }
 
 .container {
-  width: 80%;
+  max-width: 1350px;
   padding: 1rem;
 }
 
@@ -66,7 +67,55 @@ body {
 
 .right .line {
   display: flex;
-  background-color: antiquewhite;
-  padding: 2rem;
+  background-color: var(--light);
+  border-radius: 1rem;
+  padding: 1.5rem 2rem;
   margin: 1rem;
+}
+
+.right .line p {
+  color: var(--magenta);
+  font-weight: 700;
+}
+
+.line-1 {
+  position: relative;
+  right: 8rem;
+}
+
+.line-2 {
+  position: relative;
+  right: 4rem;
+}
+
+.row-2 {
+  display: flex;
+}
+
+.card {
+  background-color: var(--magenta);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.card-2 {
+  margin: 0rem 2rem;
+  position: relative;
+  top: 2rem;
+}
+
+.card-3 {
+  position: relative;
+  top: 4rem;
+}
+
+.card h3 {
+  color: white;
+  margin-bottom: 0.4rem;
+}
+
+.card p {
+  margin-top: 0.5rem;
+  color: white;
+  font-size: 0.9rem;
 }
